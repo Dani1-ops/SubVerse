@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SubVerse | Produtos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <a href="index.html">SubVerse</a>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Início</a>
+
+        <a href="#produtos">Produtos</a>
+
+    </nav>
+
+</header>
+
+<section class="banner-produtos">
+
+    <h1 id="tituloPagina">Coleção</h1>
+
+    <p id="descricaoPagina">
+        Conheça todos os modelos disponíveis.
+    </p>
+
+</section>
+
+<section id="produtos" class="grid-produtos">
+
+    <div class="produto"
+        data-tecido="algodao"
+        data-img="img/camisa.png"
+        data-nome="Oversized Eclipse"
+        data-preco="R$ 89,90"
+        data-descricao="100% Algodão Premium">
+
+        <img src="img/camisa.png">
+
+        <h3>Oversized Eclipse</h3>
+
+        <span>R$ 89,90</span>
+
+    </div>
+
+    <div class="produto"
+        data-tecido="algodao"
+        data-img="img/camisa.png"
+        data-nome="Void"
+        data-preco="R$ 94,90"
+        data-descricao="100% Algodão Premium">
+
+        <img src="img/camisa.png">
+
+        <h3>Void</h3>
+
+        <span>R$ 94,90</span>
+
+    </div>
+
+    <div class="produto"
+        data-tecido="suedine"
+        data-img="img/camisa.png"
+        data-nome="Shadow"
+        data-preco="R$ 109,90"
+        data-descricao="Suedine Premium">
+
+        <img src="img/camisa.png">
+
+        <h3>Shadow</h3>
+
+        <span>R$ 109,90</span>
+
+    </div>
+
+    <div class="produto"
+        data-tecido="suedine"
+        data-img="img/camisa.png"
+        data-nome="Black Soul"
+        data-preco="R$ 119,90"
+        data-descricao="Suedine Premium">
+
+        <img src="img/camisa.png">
+
+        <h3>Black Soul</h3>
+
+        <span>R$ 119,90</span>
+
+    </div>
+
+</section>
+
+<!-- Modal do produto -->
+<!-- MODAL DO PRODUTO -->
+
+<div class="modal" id="produtoModal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <div class="modal-left">
+
+            <img id="modalImg" src="" alt="Produto">
+
+        </div>
+
+        <div class="modal-right">
+
+            <h2 id="modalNome"></h2>
+
+            <div class="estrelas">
+
+                ★★★★★
+
+            </div>
+
+            <h3 id="modalPreco"></h3>
+
+            <p id="modalDescricao"></p>
+
+            <div class="info">
+
+                <p>
+                    <strong>Tecido:</strong>
+                    <span id="modalTecido"></span>
+                </p>
+
+                <p>
+                    <strong>Gramatura:</strong>
+                    240g
+                </p>
+
+                <p>
+                    <strong>Modelagem:</strong>
+                    Oversized
+                </p>
+
+                <p>
+                    <strong>Cor:</strong>
+                    Preto
+                </p>
+
+            </div>
+
+            <h4>Tamanho</h4>
+
+            <div class="tamanhos">
+
+                <button>P</button>
+
+                <button>M</button>
+
+                <button>G</button>
+
+                <button>GG</button>
+
+            </div>
+
+            <h4>Cor</h4>
+
+            <div class="cores">
+
+                <span class="cor preto"></span>
+
+                <span class="cor branco"></span>
+
+                <span class="cor cinza"></span>
+
+            </div>
+
+            <button class="comprar">
+
+                Comprar Agora
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

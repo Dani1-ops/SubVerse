@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SubVerse</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="img/Logo Sv 1x1 preto.png" alt="Logo">
+    </div>
+
+    <nav>
+
+        <a href="#">Início</a>
+        <a href="#colecao">Coleção</a>
+        <a href="#tecidos">Tecidos</a>
+        <a href="#contato">Contato</a>
+
+    </nav>
+
+</header>
+
+<section class="banner">
+
+    <div class="overlay">
+
+
+    </div>
+
+</section>
+
+<section id="colecao">
+
+    <h2>Coleção</h2>
+
+    <div class="carousel">
+
+        <button class="carousel-btn prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="wrapper">
+
+            <div class="slides">
+
+                <div class="produto"
+
+                    data-img="img/camisa.png"
+
+                    data-nome="Oversized Eclipse"
+
+                    data-preco="R$ 89,90"
+
+                    data-tecido="100% Algodão"
+
+                    data-descricao="Camiseta premium oversized produzida em algodão penteado.">
+
+                    <img src="img/camisa.png">
+
+                </div>
+
+                <div class="produto"
+
+                    data-img="img/camisa.png"
+
+                    data-nome="Shadow"
+
+                    data-preco="R$ 99,90"
+
+                    data-tecido="Suedine"
+
+                    data-descricao="Conforto premium e caimento oversized.">
+
+                    <img src="img/camisa.png">
+
+                </div>
+
+                <div class="produto"
+
+                    data-img="img/camisa.png"
+
+                    data-nome="Void"
+
+                    data-preco="R$ 84,90"
+
+                    data-tecido="100% Algodão"
+
+                    data-descricao="Linha minimalista SubVerse.">
+
+                    <img src="img/camisa.png">
+
+                </div>
+
+                <div class="produto"
+
+                    data-img="img/camisa.png"
+
+                    data-nome="Inferno"
+
+                    data-preco="R$ 94,90"
+
+                    data-tecido="Suedine"
+
+                    data-descricao="Modelagem premium oversized.">
+
+                    <img src="img/camisa.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="carousel-btn next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</section>
+<div class="dots"></div>
+<section id="tecidos">
+
+    <h2>Nossos Tecidos</h2>
+
+    <div class="tecidos-grid">
+
+        <a href="produtos.html?tecido=suedine" class="tecido">
+
+            <img src="img/camisa.png">
+
+            <div class="tecido-info">
+
+                <h3>Suedine Premium</h3>
+
+                <p>
+                    Extremamente macio, confortável e com excelente caimento.
+                </p>
+
+            </div>
+
+        </a>
+
+        <a href="produtos.html?tecido=algodao" class="tecido">
+
+            <img src="img/camisa.png">
+
+            <div class="tecido-info">
+
+                <h3>100% Algodão</h3>
+
+                <p>
+                    Alta respirabilidade e resistência.
+                </p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+<footer id="contato">
+
+    <div class="footer-logo">
+
+        <h2>SubVerse</h2>
+
+        <p>Entre em Contato.</p>
+
+    </div>
+
+    <div class="footer-contato">
+
+        <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+        </a>
+
+        <a href="https://www.instagram.com/subverse.clothing/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+        </a>
+
+        <a href="#" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            contato@subverse.com
+        </a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 SubVerse • Todos os direitos reservados.
+    </p>
+
+</footer>
+
+
+<!-- MODAL DO PRODUTO -->
+
+<div class="modal" id="produtoModal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <div class="modal-left">
+
+            <img id="modalImg" src="" alt="Produto">
+
+        </div>
+
+        <div class="modal-right">
+
+            <h2 id="modalNome"></h2>
+
+            <div class="estrelas">
+
+                ★★★★★
+
+            </div>
+
+            <h3 id="modalPreco"></h3>
+
+            <p id="modalDescricao"></p>
+
+            <div class="info">
+
+                <p>
+                    <strong>Tecido:</strong>
+                    <span id="modalTecido"></span>
+                </p>
+
+                <p>
+                    <strong>Gramatura:</strong>
+                    240g
+                </p>
+
+                <p>
+                    <strong>Modelagem:</strong>
+                    Oversized
+                </p>
+
+                <p>
+                    <strong>Cor:</strong>
+                    Preto
+                </p>
+
+            </div>
+
+            <h4>Tamanho</h4>
+
+            <div class="tamanhos">
+
+                <button>P</button>
+
+                <button>M</button>
+
+                <button>G</button>
+
+                <button>GG</button>
+
+            </div>
+
+            <h4>Cor</h4>
+
+            <div class="cores">
+
+                <span class="cor preto"></span>
+
+                <span class="cor branco"></span>
+
+                <span class="cor cinza"></span>
+
+            </div>
+
+            <button class="comprar">
+
+                Comprar Agora
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
